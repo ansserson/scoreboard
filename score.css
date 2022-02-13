@@ -7,7 +7,7 @@
 }
 .container {
   display:grid; 
-  color:white;
+  color:red;
 }
 .box, .space {
   display:flex; 
