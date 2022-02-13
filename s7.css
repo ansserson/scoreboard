@@ -13,6 +13,7 @@
 --bkggeneral: linear-gradient(170deg, rgba(24,28,96,1) 47%, rgba(3,3,10,1) 93%);
 --bkgdark: rgba(3,3,10,1);
 --bkgmedium: rgba(255,255,255,0.1);
+--hidecolor: black;
 --signalcolor: red;
 --signaloff: white;
 
@@ -105,8 +106,8 @@ em {
 
 .boxmoment {
   transform: skew(var(--antiskew));
-  color:var(--bkgmedium); 
-  background:var(--bkgmedium); 
+  color:var(--hidecolor); 
+  background:var(--hidecolor);
 }
 
 /*---- SOCCER inline -----*/
@@ -126,18 +127,18 @@ em {
 .containersoccer .sgrlogo{grid-column: 1 / 2;}
 .containersoccer .boxtimer {
   grid-column: 7 / 8;
-  font-weight:300;
+  font-weight:400;
 }
 .containersoccer .boxhometeam {
   grid-column: 2 / 3;
-  font-weight:400;
+  font-weight:500;
 }
 .containersoccer .boxhomepoints{grid-column: 3 / 4;}
 .containersoccer .space{grid-column: 4 / 5;}
 .containersoccer .boxawaypoints{grid-column: 5 / 6;}
 .containersoccer .boxawayteam {
   grid-column: 6 / 7;
-  font-weight:400;
+  font-weight:500;
 }
 .containersoccer .labelmoment{grid-row: 1 / 2; grid-column: 8 / 9;}
 .containersoccer .boxmoment {grid-column: 8 / 9;}
