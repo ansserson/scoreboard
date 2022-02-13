@@ -44,10 +44,10 @@ em {
   padding:.2em; 
   margin-left: 1.5vw; 
   border-left: solid 1vw var(--bordercolors);
-  /*----
+  
   margin-right: 1.5vw; 
   border-right: solid 1vw var(--bordercolors);
-  -----*/
+  
   
   color:var(--text); 
   font-family:Oswald,arial; 
