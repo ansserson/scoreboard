@@ -75,9 +75,10 @@ em {
 }
 
 .boxmoment {
+  background:red;
+  color:red;  
   transform: skew(var(--doubleskew));
 }
-
 
 /*---- SOCCER inline -----*/
 .containersoccer {
