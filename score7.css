@@ -10,12 +10,12 @@
   color:white;
 }
 .box, .space {
-  display:flex; 
+  /*----- display:flex; --------*/
   justify-content:center; 
   align-items:center;  
   padding: 0 .5em; 
-  -webkit-transform:skew(5deg, 0); 
-  transform:skew(5deg, 0); 
+  /*----- -webkit-transform:skew(5deg, 0); --------*/ 
+  /*----- transform:skew(5deg, 0); --------*/ 
   /*----- font-style:italic; --------*/
 }
 
@@ -34,6 +34,7 @@
 .boxhometeam {
   background:black;
   justify-content:flex-end;
+  border-left: solid .1em rgba(0,0,0,0.5); 
 }
 
 .boxawayteam {
@@ -46,7 +47,6 @@
  
 .boxpoints, .space {
   background:red;
-  /*----- background:#1476D2; --------*/
 }
 .boxhomepoints {
   padding-right:.8vw; 
@@ -64,9 +64,12 @@
   color:black;
 }
 .boxsets {
+  display:flex;
   background:white;
   color:black;
-  justify-content:flex-start;
+  /*----- justify-content:flex-start; --------*/
+  -webkit-transform:skew(10deg, 0); 
+  transform:skew(10deg, 0); 
 }
 
 
