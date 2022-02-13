@@ -68,10 +68,35 @@ em {
 
 .space {
   padding:0 .08em;
+  transform: skew(var(--antiskew));
+}
+
+.boxteams {
+  transform: skew(var(--antiskew));
+}
+
+.boxhometeam {
+  transform: skew(var(--antiskew));
+}
+
+.boxawayteam {
+  transform: skew(var(--antiskew));
 }
  
 .boxpoints, .space {
-  background:red;
+  transform: skew(var(--antiskew));
+}
+.boxhomepoints {
+  transform: skew(var(--antiskew));
+}
+.boxawaypoints {
+  transform: skew(var(--antiskew));
+}
+.boxawayteam {
+  transform: skew(var(--antiskew));
+}
+.boxtimer {
+  transform: skew(var(--antiskew));
 }
 
 .boxmoment {
