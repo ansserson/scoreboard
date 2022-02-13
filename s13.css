@@ -144,6 +144,7 @@ em {
   grid-column: 6 / 7;
   font-weight:600;
 }
+/*----
 .containersoccer .labelmoment {
   grid-row: 1 / 2;
   grid-column: 8 / 9;
@@ -153,6 +154,7 @@ em {
   grid-column: 8 / 9;
   width: 0%;
 }
+-----*/
 
 .containersoccer .boxpoints {
   font-weight:800; font-size:1.2em;
