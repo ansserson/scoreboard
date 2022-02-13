@@ -23,20 +23,59 @@
 --labelsmargin: .1em;
 }
 
-html, body {margin:0; padding:0;}
-em {font-style:normal;}
+html, body {
+  margin:0; 
+  padding:0;
+}
+em {
+  font-style:normal;
+}
 
-.container {display:grid; float:left; width:auto; background:var(--bkggeneral); position:relative; box-sizing: border-box; height:auto; padding:.2em; margin-left: 1.5vw; border-left: solid 1vw var(--bordercolors); color:var(--text); font-family:Oswald,arial; transform: skew(var(--skew));}
-.sgrlogo {transform: skew(var(--antiskew));}
+.container {
+  display:grid; 
+  float:left; 
+  width:auto; 
+  background:var(--bkggeneral); 
+  position:relative; 
+  box-sizing: border-box; 
+  height:auto; 
+  padding:.2em; 
+  margin-left: 1.5vw; 
+  border-left: solid 1vw var(--bordercolors); 
+  color:var(--text); 
+  font-family:Oswald,arial; 
+  transform: skew(var(--skew));
+}
+.sgrlogo {
+  transform: skew(var(--antiskew));
+}
 
-.box, div {box-sizing: border-box; display:flex; align-items:center; height:100%;}
+.box, div {
+  box-sizing: border-box; 
+  display:flex; 
+  align-items:center; 
+  height:100%;
+}
 
-.space, .boxballsstrikesseparator {background:  url(https://www.live.flexyscore.net/style/img/redstar2.png) no-repeat center center; background-size: contain; color:transparent;}
+.space, .boxballsstrikesseparator {
+  background:  url(https://www.live.flexyscore.net/style/img/redstar2.png) no-repeat center center; 
+  background-size: contain; 
+  color:transparent;
+}
 
 
 /*---- SOCCER inline -----*/
-.containersoccer {grid-template: auto / 3vw auto calc(var(--pointswidth) + .5em) 1em calc(var(--pointswidth) + 1em) auto calc(var(--timerwidth) + .5em) auto; float:left; width:auto; font-size:3vw;}
-.containersoccer .box {justify-content:center; align-items:center;  padding: 0 .5em;}
+.containersoccer {
+  grid-template: auto / 3vw auto calc(var(--pointswidth) + .5em) 1em calc(var(--pointswidth) + 1em) auto calc(var(--timerwidth) + .5em) auto;
+  float:left; 
+  width:auto; 
+  font-size:3vw;
+}
+.containersoccer .box {
+  justify-content:center; 
+  align-items:center;  
+  padding: 0 .5em;
+}
 
 .containersoccer .box {grid-row: 1/2;}
 .containersoccer .sgrlogo{grid-column: 1 / 2;}
