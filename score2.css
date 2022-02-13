@@ -1,0 +1,108 @@
+@import url(https://www.power.flexyscore.net/dirette/temp/css/schema.css);
+/*----- classi comuni ------*/
+* {
+  -webkit-backface-visibility: hidden; 
+  overflow:hidden; 
+  margin:-1px;
+}
+.container {
+  display:grid; 
+  color:white;
+}
+.box, .space {
+  display:flex; 
+  justify-content:center; 
+  align-items:center;  
+  padding: 0 .5em; 
+  -webkit-transform:skew(45deg, 0); 
+  transform:skew(45deg, 0); 
+  font-style:italic;
+}
+.space {
+  padding:0 .08em;
+}
+.boxteams, .boxhometeam, .boxawayteam {
+  /*----- background:#0E5598; --------*/
+  background:black;
+}
+.boxpoints, .space {
+  background:yellow;
+  /*----- background:#1476D2; --------*/
+}
+.boxhomepoints {
+  padding-right:.8vw; 
+  border-left: solid .1em rgba(0,0,0,0.5); 
+  justify-content:flex-end;
+}
+.boxawaypoints {
+  padding-left:.8vw; 
+  border-right: solid .1em rgba(0,0,0,0.5); 
+  justify-content:flex-start;
+}
+.boxawayteam {
+  border-right: solid .1em rgba(0,0,0,0.5);
+}
+.boxsets {
+  background:#3694EC;
+  /*----- color:#052647; --------*/
+  color:yellow
+}
+.sgrlogo {
+  background-size: auto 80% !important;
+}
+.sgrlogo:before {
+  display:none;
+}
+
+
+/*----- GENERIC --------*/
+.containergeneric {
+  grid-template: auto / 8vw auto minmax(7.5vw, auto) auto minmax(7.5vw, auto) auto; 
+  float:left; 
+  width:auto; 
+  font-size:3.1vw;
+}
+.containergeneric .boxawayteam {
+  margin-right: 1.5em;
+}
+
+/*----- SOCCER --------*/
+.containersoccer {
+  grid-template: auto / 7vw auto minmax(6vw, auto) auto minmax(6vw, auto) auto 12vw auto; 
+  float:left; 
+  width:auto; 
+  font-size:3.1vw;
+}
+.containersoccer .box {
+  grid-row: 1/2;
+}
+.containersoccer .sgrlogo {
+  grid-column: 1 / 2;
+}
+.containersoccer .boxtimer {
+  grid-column: 7 / 8;
+}
+.containersoccer .boxhometeam {
+  grid-column: 2 / 3;
+}
+.containersoccer .boxhomepoints { 
+  grid-column: 3 / 4;
+}
+.containersoccer .space {
+  grid-column: 4 / 5;
+}
+.containersoccer .boxawaypoints { 
+  grid-column: 5 / 6;
+}
+.containersoccer .boxawayteam {
+  grid-column: 6 / 7;
+}
+.containersoccer .labelmoment {
+  grid-row: 1 / 2; 
+  grid-column: 8 / 9;
+}
+
+.containersoccer .boxmoment { 
+  grid-column: 8 / 9; 
+  margin-right:1vw;
+}
