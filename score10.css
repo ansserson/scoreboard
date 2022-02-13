@@ -21,14 +21,20 @@
 
 .sgrlogo {
   background:red;
-  background-size: auto 80% !important;
+  /*----- background-size: auto 80% !important; --------*/
+  /*----- display:flex; --------*/
+  /*----- -webkit-transform:skew(5deg, 0); --------*/ 
+  /*----- transform:skew(5deg, 0); --------*/
+  
+  border-right: solid .1em rgba(255,255,255,0.5);
+  border-left: solid .1em rgba(1,1,1,0.5);
   display:flex;
-  -webkit-transform:skew(5deg, 0); 
-  transform:skew(5deg, 0);
+  -webkit-transform:skew(10deg, 0); 
+  transform:skew(10deg, 0);
 }
 
 .sgrlogo:before {
-  display:none;
+  /*----- display:none; --------*/
 }
 
 .boxteams {
@@ -37,7 +43,7 @@
 
 .boxhometeam {
   background:black;
-  justify-content:flex-end;
+  /*----- justify-content:flex-end; --------*/
   border-left: solid .1em rgba(0,0,0,0.5); 
 }
 
