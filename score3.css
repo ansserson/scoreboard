@@ -14,9 +14,9 @@
   justify-content:center; 
   align-items:center;  
   padding: 0 .5em; 
-  -webkit-transform:skew(45deg, 0); 
-  transform:skew(45deg, 0); 
-  font-style:italic;
+  -webkit-transform:skew(5deg, 0); 
+  transform:skew(5deg, 0); 
+  /*----- font-style:italic; --------*/
 }
 .space {
   padding:0 .08em;
@@ -26,7 +26,7 @@
   background:black;
 }
 .boxpoints, .space {
-  background:yellow;
+  background:red;
   /*----- background:#1476D2; --------*/
 }
 .boxhomepoints {
@@ -43,9 +43,10 @@
   border-right: solid .1em rgba(0,0,0,0.5);
 }
 .boxsets {
-  background:#3694EC;
+  /*----- background:#3694EC; --------*/
   /*----- color:#052647; --------*/
-  color:yellow
+  background:white;
+  color:black;
 }
 .sgrlogo {
   background-size: auto 80% !important;
