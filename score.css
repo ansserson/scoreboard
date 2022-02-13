@@ -26,7 +26,8 @@
   background:black;
 }
 .boxpoints, .space {
-  background:#1476D2;
+  background:yellow;
+  /*----- background:#1476D2; --------*/
 }
 .boxhomepoints {
   padding-right:.8vw; 
