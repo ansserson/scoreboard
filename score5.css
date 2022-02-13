@@ -18,17 +18,32 @@
   transform:skew(5deg, 0); 
   /*----- font-style:italic; --------*/
 }
+
+.sgrlogo {
+  background-size: auto 80% !important;
+}
+
+.sgrlogo:before {
+  display:none;
+}
+
+.boxteams {
+  background:black;
+}
+
+.boxhometeam {
+  background:black;
+  justify-content:flex-end;
+}
+
+.boxawayteam {
+  background:black;
+}
+
 .space {
   padding:0 .08em;
 }
-.boxteams, .boxhometeam, .boxawayteam {
-  /*----- background:#0E5598; --------*/
-  background:black;
-}
-.boxtimer {
-  background:white;
-  color:black;
-} 
+ 
 .boxpoints, .space {
   background:red;
   /*----- background:#1476D2; --------*/
@@ -36,27 +51,22 @@
 .boxhomepoints {
   padding-right:.8vw; 
   border-left: solid .1em rgba(0,0,0,0.5); 
-  justify-content:flex-end;
 }
 .boxawaypoints {
   padding-left:.8vw; 
   border-right: solid .1em rgba(0,0,0,0.5); 
-  justify-content:flex-start;
 }
 .boxawayteam {
   border-right: solid .1em rgba(0,0,0,0.5);
 }
-.boxsets {
-  /*----- background:#3694EC; --------*/
-  /*----- color:#052647; --------*/
+.boxtimer {
   background:white;
   color:black;
 }
-.sgrlogo {
-  background-size: auto 80% !important;
-}
-.sgrlogo:before {
-  display:none;
+.boxsets {
+  background:white;
+  color:black;
+  justify-content:flex-start;
 }
 
 
