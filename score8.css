@@ -20,7 +20,11 @@
 }
 
 .sgrlogo {
+  background:red;
   background-size: auto 80% !important;
+  display:flex;
+  -webkit-transform:skew(5deg, 0); 
+  transform:skew(5deg, 0);
 }
 
 .sgrlogo:before {
@@ -64,12 +68,14 @@
   color:black;
 }
 .boxsets {
-  display:flex;
   background:white;
   color:black;
-  /*----- justify-content:flex-start; --------*/
-  -webkit-transform:skew(10deg, 0); 
-  transform:skew(10deg, 0); 
+}
+.boxmoment {
+  background:yellow;
+  color:yellow;
+  border-right: solid .1em rgba(0,0,0,0.5);
+  border-left: solid .1em rgba(0,0,0,0.5);
 }
 
 
