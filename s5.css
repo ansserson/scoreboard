@@ -42,7 +42,11 @@ em {
   height:auto; 
   padding:.2em; 
   margin-left: 1.5vw; 
-  border-left: solid 1vw var(--bordercolors); 
+  border-left: solid 1vw var(--bordercolors);
+  
+  margin-right: 1.5vw; 
+  border-right: solid 1vw var(--bordercolors);
+  
   color:var(--text); 
   font-family:Oswald,arial; 
   transform: skew(var(--skew));
@@ -100,9 +104,8 @@ em {
 }
 
 .boxmoment {
-  background:red;
-  color:red;  
-  transform: skew(var(--doubleskew));
+  color:var(--bkggeneral); 
+  background:var(--bkggeneral); 
 }
 
 /*---- SOCCER inline -----*/
@@ -121,15 +124,23 @@ em {
 .containersoccer .box {grid-row: 1/2;}
 .containersoccer .sgrlogo{grid-column: 1 / 2;}
 .containersoccer .boxtimer{grid-column: 7 / 8;}
-.containersoccer .boxhometeam{grid-column: 2 / 3;}
+.containersoccer .boxhometeam {
+  grid-column: 2 / 3;
+  font-weight:600;
+}
 .containersoccer .boxhomepoints{grid-column: 3 / 4;}
 .containersoccer .space{grid-column: 4 / 5;}
 .containersoccer .boxawaypoints{grid-column: 5 / 6;}
-.containersoccer .boxawayteam{grid-column: 6 / 7;}
+.containersoccer .boxawayteam {
+  grid-column: 6 / 7;
+  font-weight:600;
+}
 .containersoccer .labelmoment{grid-row: 1 / 2; grid-column: 8 / 9;}
 .containersoccer .boxmoment {grid-column: 8 / 9;}
 
-.containersoccer .boxpoints {font-weight:700; font-size:1.2em;}
+.containersoccer .boxpoints {
+  font-weight:700; font-size:1.2em;
+}
 
 .containersoccer .boxtimer,
 .containersoccer .boxmoment {border-left: var(--borders);}
