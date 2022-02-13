@@ -158,8 +158,9 @@ em {
   font-weight:800; font-size:1.2em;
 }
 
-.containersoccer .boxtimer, .containersoccer .boxmoment {
+.containersoccer .boxtimer {
   border-left: var(--borders);
+  border-right: var(--borders);
 }
 .containersoccer .boxtimer {background:var(--bkgmedium);}
 .containersoccer .boxovertimeon {background: var(--signalcolor) !important;}
