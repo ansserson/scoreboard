@@ -4,6 +4,7 @@
 :root {
 --skew: -5deg;
 --antiskew: 5deg;
+--doubleskew: 10deg;
 --text: #fff;
 --textinverted: rgba(3,3,10,1);
 --bordercolors: red;
@@ -57,10 +58,24 @@ em {
   height:100%;
 }
 
+/*----
 .space, .boxballsstrikesseparator {
   background:  url(https://www.live.flexyscore.net/style/img/redstar2.png) no-repeat center center; 
   background-size: contain; 
   color:transparent;
+}
+-----*/
+
+.space {
+  padding:0 .08em;
+}
+ 
+.boxpoints, .space {
+  background:red;
+}
+
+.boxmoment {
+  transform: skew(var(--doubleskew));
 }
 
 
