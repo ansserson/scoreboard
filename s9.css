@@ -45,8 +45,10 @@ em {
   margin-left: 1.5vw; 
   border-left: solid 1vw var(--bordercolors);
   
+  /*----
   margin-right: 1.5vw; 
   border-right: solid 1vw var(--bordercolors);
+  -----*/
   
   color:var(--text); 
   font-family:Oswald,arial; 
@@ -134,7 +136,10 @@ em {
   font-weight:600;
 }
 .containersoccer .boxhomepoints{grid-column: 3 / 4;}
-.containersoccer .space{grid-column: 4 / 5;}
+.containersoccer .space {
+  grid-column: 4 / 5;
+  font-weight:800;
+}
 .containersoccer .boxawaypoints{grid-column: 5 / 6;}
 .containersoccer .boxawayteam {
   grid-column: 6 / 7;
