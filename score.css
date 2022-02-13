@@ -7,7 +7,7 @@
 }
 .container {
   display:grid; 
-  color:red;
+  color:white;
 }
 .box, .space {
   display:flex; 
@@ -42,7 +42,8 @@
 }
 .boxsets {
   background:#3694EC;
-  color:#052647;
+  /*----- color:#052647; --------*/
+  color:yellow
 }
 .sgrlogo {
   background-size: auto 80% !important;
