@@ -22,7 +22,8 @@
   padding:0 .08em;
 }
 .boxteams, .boxhometeam, .boxawayteam {
-  background:#0E5598;
+  /*----- background:#0E5598; --------*/
+  background:black;
 }
 .boxpoints, .space {
   background:#1476D2;
