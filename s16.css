@@ -132,7 +132,6 @@ em {
 .containersoccer .boxtimer {
   grid-column: 7 / 8;
   font-weight:600;
-  font-size:1.1em;
 }
 .containersoccer .boxhometeam {
   grid-column: 2 / 3;
