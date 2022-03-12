@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:200,700');
+
+/*----- Classi comuni ----*/
+:root {
+--skew: -5deg;
+--antiskew: 5deg;
+--doubleskew: 10deg;
+--text: #fff;
+--textinverted: rgba(3,3,10,1);
+--bordercolors: red;
+--borders: solid 1px #999; 
+--bkgimage:;
+--bkggeneral: linear-gradient(170deg, rgba(24,28,96,1) 47%, rgba(3,3,10,1) 93%);
+--bkgdark: rgba(3,3,10,1);
+--bkgmedium: rgba(255,255,255,0.1);
+--hidecolor: black;
+--signalcolor: red;
+--signaloff: white;
+
+--timerwidth:2.5em;
+--timerpadding: 0 .5vw;
+--pointswidth:1.5em;
+--pointspadding: 0 .5vw;
+--momentwidth:1.7em;
+--labelsmargin: .1em;
+}
+
+html, body {
+  margin:0; 
+  padding:0;
+}
+em {
+  font-style:normal;
+}
+
+.container {
+  display:grid; 
+  float:left; 
+  width:auto; 
+  background:var(--bkggeneral); 
+  position:relative; 
+  box-sizing: border-box; 
+  height:auto; 
+  padding:.2em; 
+  margin-left: 1.5vw; 
+  border-left: solid 1vw var(--bordercolors);
+  
+  /*----
+  margin-right: 1.5vw; 
+  border-right: solid 1vw var(--bordercolors);
+  -----*/
+  
+  
+  color:var(--text); 
+  font-family:Oswald,arial; 
+  transform: skew(var(--skew));
+}
+.sgrlogo {
+  transform: skew(var(--antiskew));
+}
+
+.box, div {
+  box-sizing: border-box; 
+  display:flex; 
+  align-items:center; 
+  height:100%;
+}
+
+/*----
+.space, .boxballsstrikesseparator {
+  background:  url(https://www.live.flexyscore.net/style/img/redstar2.png) no-repeat center center; 
+  background-size: contain; 
+  color:transparent;
+}
+-----*/
+
+.space {
+  padding:0 .08em;
+  transform: skew(var(--antiskew));
+}
+
+.boxteams {
+  transform: skew(var(--antiskew));
+}
+
+.boxhometeam {
+  transform: skew(var(--antiskew));
+}
+
+.boxawayteam {
+  transform: skew(var(--antiskew));
+}
+ 
+.boxpoints, .space {
+  transform: skew(var(--antiskew));
+}
+.boxhomepoints {
+  transform: skew(var(--antiskew));
+}
+.boxawaypoints {
+  transform: skew(var(--antiskew));
+}
+.boxawayteam {
+  transform: skew(var(--antiskew));
+}
+.boxtimer {
+  transform: skew(var(--antiskew));
+}
+
+.boxmoment {
+  transform: skew(var(--antiskew));
+  color:transparent; 
+  background:transparent;
+}
+
+/*---- SOCCER inline -----*/
+.containersoccer {
+  grid-template: auto / 3vw auto calc(var(--pointswidth) + .5em) 1em calc(var(--pointswidth) + 1em) auto calc(var(--timerwidth) + .5em) auto;
+  float:left; 
+  width:auto; 
+  font-size:3vw;
+}
+.containersoccer .box {
+  justify-content:center; 
+  align-items:center;  
+  padding: 0 .5em;
+}
+
+.containersoccer .box {grid-row: 1/2;}
+.containersoccer .sgrlogo{grid-column: 1 / 2;}
+
+.containersoccer .boxtimer {
+  grid-column: 7 / 8;
+  font-weight:600;
+}
+.containersoccer .boxhometeam {
+  grid-column: 2 / 3;
+  font-weight:600;
+}
+.containersoccer .boxhomepoints{grid-column: 3 / 4;}
+.containersoccer .space {
+  grid-column: 4 / 5;
+  font-weight:600;
+}
+.containersoccer .boxawaypoints{grid-column: 5 / 6;}
+.containersoccer .boxawayteam {
+  grid-column: 6 / 7;
+  font-weight:600;
+}
+
+.containersoccer .labelmoment {
+  grid-row: 1 / 2;
+  grid-column: 8 / 9;
+  width: 0%;
+}
+.containersoccer .boxmoment {
+  grid-column: 8 / 9;
+  width: 0%;
+}
+
+.containersoccer .boxpoints {
+  font-weight:800; font-size:1.2em;
+}
+
+.containersoccer .boxtimer .containergeneric .boxmoment {
+  border-left: var(--borders);
+  /*---- border-right: var(--borders); -----*/
+}
+.containersoccer .boxtimer {background:var(--bkgmedium);}
+.containersoccer .boxovertimeon {background: var(--signalcolor) !important;}
+
+
+
+
+/*---- GENERIC inline -----*/
+.containergeneric {grid-template: auto / 3vw auto calc(var(--pointswidth) + .5em) 1em calc(var(--pointswidth) + 1em) auto; float:left; width:auto; font-size:3vw;}
+.containergeneric .box {justify-content:center; align-items:center;  padding: 0 .5em;}
+
+.containergeneric .box {grid-row: 1/2;}
+.containergeneric .sgrlogo{grid-column: 1 / 2;}
+.containergeneric .boxhometeam{grid-column: 2 / 3;}
+.containergeneric .boxhomepoints{grid-column: 3 / 4;}
+.containergeneric .space{grid-column: 4 / 5;}
+.containergeneric .boxawaypoints{grid-column: 5 / 6;}
+.containergeneric .boxawayteam{grid-column: 6 / 7;}
+
+.containergeneric .boxpoints {font-weight:700; font-size:1.2em;}
+
+.containergeneric .boxtimer,
+.containergeneric .boxmoment {
+  border-left: var(--borders);
+}
